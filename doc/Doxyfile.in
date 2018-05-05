@@ -1,0 +1,10 @@
+# Doxyfile 1.8.13
+
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = @PROJECT_NAME@
+PROJECT_NUMBER         = @VERSION_STRING@
+PROJECT_LOGO           =
+OUTPUT_LANGUAGE        = English
+MARKDOWN_SUPPORT       = YES
+INPUT                  = "@PROJECT_SOURCE_DIR@/include"
+INPUT_ENCODING         = UTF-8
