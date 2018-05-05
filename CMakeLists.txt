@@ -1,15 +1,19 @@
-set(CMAKE_VERBOSE_MAKEFILE 1)
+#set(CMAKE_VERBOSE_MAKEFILE 1)
 cmake_minimum_required(VERSION 3.0.2)
 
-project (Example CXX)
+project(Example CXX)
+
+set(VERSION_STRING "0.1.0")
+
+message("Version: ${VERSION_STRING}")
 
 set(CPPUTEST_HOME ${PROJECT_SOURCE_DIR}/CppUTest)
-
-message("CppUTest directory: ${CPPUTEST_HOME}")
+set(CPPUTEST_INCLUDE_DIR ${CPPUTEST_HOME}/include)
+set(CPPUTEST_LIB_FILE ${CPPUTEST_HOME}/libCppUTest.a)
 
 include_directories(include)
 add_subdirectory(doc)
 add_subdirectory(src/main)
 add_subdirectory(src/test)
 
-add_custom_target(test-run COMMAND ./src/test/RunAllTests DEPENDS RunAllTests)
+add_custom_target(check COMMAND ./src/test/RunAllTests DEPENDS RunAllTests)
