@@ -1,4 +1,4 @@
-#include "CppUTest/TestHarness.h"
+#include "TestHarness.h"
 #include "example.h"
 
 TEST_GROUP(TestExample) {

@@ -1,4 +1,4 @@
-#include "CppUTest/CommandLineTestRunner.h"
+#include "CommandLineTestRunner.h"
 
 IMPORT_TEST_GROUP(TestExample);
 
