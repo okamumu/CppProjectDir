@@ -21,6 +21,18 @@ A template for C++ project with CppUTest and Doxygen.
 - `VERSION_STRING`: The version of programs.
 - `PROJECT_NAME`: The name of project that is defined by the `project` command in CMakeLists.txt.
 
+## Installing CppUTest
+
+Execute the shell script
+
+```
+./install_cpputest.sh
+```
+
+- Download from source codes of CppUTest via git
+- Compile CppUTest with CMake
+- Copy the library and include files to the directory CppUTest
+
 ## Basic Usage
 
 ```
