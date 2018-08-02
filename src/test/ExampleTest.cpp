@@ -1,5 +1,6 @@
-#include "TestHarness.h"
 #include "example.h"
+
+#include "TestHarness.h"
 
 TEST_GROUP(TestExample) {
 };
